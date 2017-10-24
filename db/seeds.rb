@@ -7,29 +7,46 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 tutor1 = Tutor.new
+<<<<<<< HEAD
 tutor1.email = "tutor1@gmail.com"
+=======
+tutor1.email = "tutor1@example.com"
+>>>>>>> Fixed routes for real this time
 tutor1.first_name = "tutor1"
 tutor1.last_name = "name"
 tutor1.password = "tutor1"
 tutor1.password_confirmation = "tutor1"
 
 tutor2 = Tutor.new
+<<<<<<< HEAD
 tutor2.email = "tutor2@gmail.com"
+=======
+tutor2.email = "tutor2@example.com"
+>>>>>>> Fixed routes for real this time
 tutor2.first_name = "tutor2"
 tutor2.last_name = "name"
 tutor2.password = "tutor2"
 tutor2.password_confirmation = "tutor2"
 
 tutor3 = Tutor.new
+<<<<<<< HEAD
 tutor3.email = "tutor3@gmail.com"
+=======
+tutor3.email = "tutor3@example.com"
+>>>>>>> Fixed routes for real this time
 tutor3.first_name = "tutor3"
 tutor3.last_name = "name"
 tutor3.password = "tutor3"
 tutor3.password_confirmation = "tutor3"
 
 tutor4 = Tutor.new
+<<<<<<< HEAD
 tutor4.email = "tutor4@gmail.com"
 tutor4.first_name = "tutor"
+=======
+tutor4.email = "tutor4@example.com"
+tutor4.first_name = "tutor4"
+>>>>>>> Fixed routes for real this time
 tutor4.last_name = "name"
 tutor4.password = "tutor4"
 tutor4.password_confirmation = "tutor4"

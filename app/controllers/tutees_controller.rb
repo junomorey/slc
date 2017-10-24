@@ -1,12 +1,15 @@
 class TuteesController < ApplicationController
 
     before_action :validate_params, only: [:update]
+<<<<<<< HEAD
     
     def after_sign_in_path_for(tutee)
         stored_location_for(tutee) || root
     end
 
     
+=======
+>>>>>>> Fixed routes for real this time
     
     def validate_params
         if params[:tutee][:first_name] == nil || params[:tutee][:first_name].length == 0
