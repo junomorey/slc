@@ -1,9 +1,6 @@
 class TuteesController < ApplicationController
 
     before_action :validate_params, only: [:update]
-
-
-    
     
     def validate_params
         if params[:tutee][:first_name] == nil || params[:tutee][:first_name].length == 0
