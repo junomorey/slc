@@ -135,17 +135,17 @@ Scenario: routing is correct for tutee form
   And I follow "Back to Home"
   Then I should be on the home page
 
-Scenario: tutee selects a tutor and sets a time 
-  When  I see a list of tutors
-  And   I select "Juno Morey"
-  Then  I should see "Monday, Wednesday, Friday" in available times
-  Then  I select "Monday" 
-  And   I select "Confirm"
-  Then  I should be on the home page
+Scenario: tutee with login has correct flow
+  When I go to the home page
+  And I go to the tutee login page
+  And I press "Submit"
+  Then I should be on the tutee match page 
+  
+Scenario: tutor with login has correct flow
+  When I go to the home page
+  And I go to the tutor login page
+  And I press "Submit"
+  Then I should be on the tutor match page 
+  
 
-Scenario: student sees current tutor and time under reservations
-  Given: I reserved "Juno Morey" on "Monday"
-  And   I am on the home page
-  And   I press "My Reservations"
-  Then  I should see "Juno Morey" under "Tutors"
-  And   I should see "Monday" under "Session Time"
+ 
