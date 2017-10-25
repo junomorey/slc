@@ -68,7 +68,7 @@ Scenario: routing is correct for tutor form
   Then I should be on Tutor Submitted Form for User 1
   And I follow "Back to Home"
   Then I should be on the home page  
-  
+
 #Lexie, User Story 1
 @tutee_form_complete
 Scenario: tutee fills in information
