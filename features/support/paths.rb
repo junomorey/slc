@@ -18,12 +18,17 @@ module NavigationHelpers
       new_tutor_session_path
     when /^the home\s?page$/ 
       '/'
+    
       
     when /^Tutee Information Form for User (.*)$/
      "/tutees/#{$1}/edit"
 
     when /^Tutee Submitted Form for User (.*)$/
      "/tutees/#{$1}"
+    when /^the landing page for Tutee (.*)$/
+     "/tutees/#{$1}"
+    when /^the landing page for Tutor (.*)$/
+     "/tutors/#{$1}"
      
     when /^Tutor Information Form for User (.*)$/
      "/tutors/#{$1}/edit"
