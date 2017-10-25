@@ -25,8 +25,10 @@ module NavigationHelpers
 
     when /^Tutee Submitted Form for User (.*)$/
      "/tutees/#{$1}"
+     
     when /^the landing page for Tutee (.*)$/
      "/tutees/#{$1}"
+     
     when /^the landing page for Tutor (.*)$/
      "/tutors/#{$1}"
      
