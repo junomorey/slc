@@ -784,6 +784,15 @@
         1,
         null
       ],
+      "/home/ubuntu/workspace/app/controllers/pages_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
       "/home/ubuntu/workspace/app/controllers/tutees_controller.rb": [
         1,
         null,
@@ -843,15 +852,6 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/app/controllers/pages_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null
-      ],
       "/home/ubuntu/workspace/app/controllers/registrations_controller.rb": [
         1,
         1,
@@ -873,6 +873,6 @@
         null
       ]
     },
-    "timestamp": 1509337754
+    "timestamp": 1509339344
   }
 }

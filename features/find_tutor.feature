@@ -24,7 +24,7 @@ Scenario: tutor fills in information
   And I fill in "tutor[tutor_cohort]" with "Computer Science"
   And I fill in "tutor[bio]" with "Info"
   And I press "Submit"
-  Then I should be on Tutor Submitted Form for User 1
+  Then I should be on the Tutor Submitted Form for User 1
 
 #Lexie, User Story 2 
 @tutor_form_no_first_name
@@ -65,7 +65,7 @@ Scenario: routing is correct for tutor form
   And I fill in "tutor[tutor_cohort]" with "Computer Science"
   And I fill in "tutor[bio]" with "Info"
   And I press "Submit"
-  Then I should be on Tutor Submitted Form for User 1
+  Then I should be on the Tutor Submitted Form for User 1
   And I follow "Back to Home"
   Then I should be on the home page  
   
@@ -84,7 +84,7 @@ Scenario: tutee fills in information
   And I fill in "tutee[major]" with "Computer Science"
   And I fill in "tutee[in_dsp]" with "Yes"
   And I press "Submit"
-  Then I should be on Tutee Submitted Form for User 1
+  Then I should be on the Tutee Submitted Form for User 1
 
 #Lexie, User Story 1  
 @tutee_form_no_first_name
@@ -131,7 +131,7 @@ Scenario: routing is correct for tutee form
   And I fill in "tutee[major]" with "Computer Science"
   And I fill in "tutee[in_dsp]" with "Yes"
   And I press "Submit"
-  Then I should be on Tutee Submitted Form for User 1
+  Then I should be on the Tutee Submitted Form for User 1
   And I follow "Back to Home"
   Then I should be on the home page
 
