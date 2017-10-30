@@ -757,10 +757,12 @@
         null,
         1,
         null,
+        4,
         2,
-        1,
-        1,
-        1,
+        2,
+        2,
+        null,
+        null,
         null,
         null,
         null,
@@ -780,15 +782,6 @@
       ],
       "/home/ubuntu/workspace/app/helpers/tutor_helper.rb": [
         1,
-        null
-      ],
-      "/home/ubuntu/workspace/app/controllers/pages_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
         null
       ],
       "/home/ubuntu/workspace/app/controllers/tutees_controller.rb": [
@@ -850,6 +843,15 @@
         null,
         null
       ],
+      "/home/ubuntu/workspace/app/controllers/pages_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
       "/home/ubuntu/workspace/app/controllers/registrations_controller.rb": [
         1,
         1,
@@ -871,6 +873,6 @@
         null
       ]
     },
-    "timestamp": 1509310986
+    "timestamp": 1509337754
   }
 }

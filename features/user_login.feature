@@ -6,7 +6,7 @@ Feature: a user registers an account or logs in to their existing account
 
 Background: accounts made only for some user
 
-@log_in_before_account
+@log_in_before_account_exists
 Scenario: log in to system before making an account
   When I go to the tutee login page
   And  I fill in "Email" with "connorvotroubek@berkeley.edu"

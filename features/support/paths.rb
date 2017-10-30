@@ -34,16 +34,17 @@ module NavigationHelpers
     when /^the home\s?page$/ 
       '/'
       
+        
     when /^Tutee Information Form for User (.*)$/
      "/tutees/#{$1}/edit"
 
-    when /^Tutee Submitted Form for User (.*)$/
+    when /^the Tutee Submitted Form for User (.*)$/
      "/tutees/#{$1}"
      
     when /^Tutor Information Form for User (.*)$/
      "/tutors/#{$1}/edit"
 
-    when /^Tutor Submitted Form for User (.*)$/
+    when /^the Tutor Submitted Form for User (.*)$/
      "/tutors/#{$1}"
 
     when /^the tutor login page$/

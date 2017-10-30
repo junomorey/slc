@@ -1,3 +1,10 @@
 <h1>Thank you for submitting a tutor form request!</h1>
 
 <%= link_to "Back to Home", root_path %>
+
+</br>
+
+<%= link_to "Logout", destroy_tutee_session_path%>
+
+<!--Bug fix: Change DELETE to GET-->
+<!--https://stackoverflow.com/questions/6557311/no-route-matches-users-sign-out-devise-rails-3-->
