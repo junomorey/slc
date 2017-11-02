@@ -1,5 +1,4 @@
 class TutorsController < ApplicationController
-
     before_action :validate_params, only: [:update]
 
     

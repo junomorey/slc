@@ -1,5 +1,5 @@
 class TuteesController < ApplicationController
-
+    before_filter :authenticate_tutee! 
     before_action :validate_params, only: [:update]
     
     def validate_params
@@ -12,6 +12,7 @@ class TuteesController < ApplicationController
     
 
     def show
+        
     end
     
     def index

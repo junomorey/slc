@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  # authenticated :tutee do
+  #   resources :fjords, only: [:new, :create, :edit, :update, :destroy, :show]
+  # end
+  # resources :fjords, only: [:index]
  
   devise_for :tutees, controllers: { registrations: "registrations" }
   devise_for :tutors, controllers: { registrations: "registrations" }
