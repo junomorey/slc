@@ -11,16 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171024162753) do
+ActiveRecord::Schema.define(version: 20171106202846) do
 
-  create_table "time_availabilitys", force: :cascade do |t|
+  create_table "time_availabilities", force: :cascade do |t|
     t.string   "day"
-    t.time     "start_time"
-    t.time     "end_time"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
     t.integer  "time_availabilityable_id"
     t.string   "time_availabilityable_type"
+    t.integer  "start_time"
+  end
+
+  create_table "time_availabilities_tutees", id: false, force: :cascade do |t|
+    t.integer "time_availability_id"
+    t.integer "tutee_id"
+  end
+
+  create_table "time_availabilities_tutors", id: false, force: :cascade do |t|
+    t.integer "time_availability_id"
+    t.integer "tutor_id"
   end
 
   create_table "tutees", force: :cascade do |t|
@@ -48,6 +57,13 @@ ActiveRecord::Schema.define(version: 20171024162753) do
     t.integer  "semesters_at_cal"
     t.string   "first_name"
     t.string   "grade"
+    t.boolean  "DSP"
+    t.boolean  "EOP"
+    t.boolean  "SBC"
+    t.boolean  "FPF"
+    t.boolean  "TRSP"
+    t.boolean  "UCIEP"
+    t.boolean  "BISP"
   end
 
   add_index "tutees", ["email"], name: "index_tutees_on_email", unique: true
