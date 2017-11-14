@@ -38,6 +38,7 @@ class TuteesController < ApplicationController
         @tutee = Tutee.find(params[:id])
         @tutee.update_attributes!(tutee_params)
         flash[:notice] = "Form for #{@tutee.first_name + ' ' + @tutee.last_name} was succesfully created"
+        NotificationsMailer.notify_tutee(@tutee).deliver_now
         redirect_to tutor_match_path(@tutee)
     end
     
