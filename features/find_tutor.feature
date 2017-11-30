@@ -210,7 +210,6 @@ Scenario: tutee fills in information
 @tutee_form_no_first_name
 Scenario: tutee fills in information but lacks first name 
   When I go to Tutee Information Form for User 1
-  And I fill in "tutee[first_name]" with ""
   And I fill in "tutee[last_name]" with "Doe"
   And I fill in "tutee[email]" with "jdoe@berkeley.edu"
   And I fill in "tutee[sid]" with "1234"
@@ -228,7 +227,6 @@ Scenario: tutee fills in information but lacks first name
 Scenario: tutee fills in information but lacks last name 
   When I go to Tutee Information Form for User 1
   And I fill in "tutee[first_name]" with "Jane"
-  And I fill in "tutee[last_name]" with ""
   And I fill in "tutee[email]" with "jdoe@berkeley.edu"
   And I fill in "tutee[sid]" with "1234"
   And I fill in "tutee[phone_number]" with "123-456-7890"
@@ -246,7 +244,6 @@ Scenario: tutee fills in information but lacks sid
   And I fill in "tutee[first_name]" with "Jane"
   And I fill in "tutee[last_name]" with "Doe"
   And I fill in "tutee[email]" with "jdoe@berkeley.edu"
-  And I fill in "tutee[sid]" with ""
   And I fill in "tutee[phone_number]" with "123-456-7890"
   And I fill in "tutee[grade]" with "Sophomore"
   And I fill in "tutee[requested_class]" with "CS61A"
@@ -264,7 +261,6 @@ Scenario: tutee fills in information but lacks grade
   And I fill in "tutee[email]" with "jdoe@berkeley.edu"
   And I fill in "tutee[phone_number]" with "123-456-7890"
   And I fill in "tutee[sid]" with "1234"
-  And I fill in "tutee[grade]" with ""
   And I fill in "tutee[requested_class]" with "CS61A"
   And I fill in "tutee[semesters_at_cal]" with "4"
   And I fill in "tutee[major]" with "Computer Science"
@@ -277,7 +273,6 @@ Scenario: tutee fills in information but lacks email
   When I go to Tutee Information Form for User 1
   And I fill in "tutee[first_name]" with "Jane"
   And I fill in "tutee[last_name]" with "Doe"
-  And I fill in "tutee[email]" with ""
   And I fill in "tutee[phone_number]" with "123-456-7890"
   And I fill in "tutee[grade]" with "Sophomore"
   And I fill in "tutee[sid]" with "1234"
@@ -293,9 +288,7 @@ Scenario: tutee fills in information but lacks phone number
   When I go to Tutee Information Form for User 1
   And I fill in "tutee[first_name]" with "Jane"
   And I fill in "tutee[last_name]" with "Doe"
-  And I fill in "tutee[email]" with "jdoe@berkeley.edu"
   And I fill in "tutee[grade]" with "Sophomore"
-  And I fill in "tutee[phone_number]" with ""
   And I fill in "tutee[sid]" with "1234"
   And I fill in "tutee[requested_class]" with "CS61A"
   And I fill in "tutee[semesters_at_cal]" with "4"
@@ -312,7 +305,6 @@ Scenario: tutee fills in information but lacks semester number
   And I fill in "tutee[phone_number]" with "123-456-7890"
   And I fill in "tutee[grade]" with "Sophomore"
   And I fill in "tutee[sid]" with "1234"
-  And I fill in "tutee[semesters_at_cal]" with ""
   And I fill in "tutee[requested_class]" with "CS61A"
   And I fill in "tutee[major]" with "Computer Science"
   And I press "Submit"
@@ -329,7 +321,6 @@ Scenario: tutee fills in information but lacks major
   And I fill in "tutee[sid]" with "1234"
   And I fill in "tutee[requested_class]" with "CS61A"
   And I fill in "tutee[semesters_at_cal]" with "4"
-  And I fill in "tutee[major]" with ""
   And I press "Submit"
   Then I should be on Tutee Information Form for User 1
 
@@ -343,7 +334,6 @@ Scenario: tutee fills in information but lacks major
   And I fill in "tutee[grade]" with "Sophomore"
   And I fill in "tutee[sid]" with "1234"
   And I fill in "tutee[semesters_at_cal]" with "4"
-  And I fill in "tutee[requested_class]" with ""
   And I fill in "tutee[major]" with "Computer Science"
   And I press "Submit"
   Then I should be on Tutee Information Form for User 1
