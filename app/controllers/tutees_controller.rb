@@ -21,6 +21,7 @@ class TuteesController < ApplicationController
         @tutee = Tutee.find(params[:id])
         @time_slots = ["8 - 9", "9 - 10", "10 - 11", "11 - 12", "12 - 1", "1 - 2", "2 - 3", "3 - 4", "4 - 5", "5 - 6"]
         @days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        @current_availabilities = @tutee.time_availabilitys.pluck(:id)
     end
 
     #Update all of the attributes gathered from edit form

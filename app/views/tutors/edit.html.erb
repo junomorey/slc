@@ -77,7 +77,7 @@
               <tr>
                 <th><%= day %></th>
                 <% @time_slots.length.times do %>
-                  <% @checked = @tutor.time_availabilitys.exists?(counter) %>
+                  <% @checked = @current_availabilities.include?(counter) %>
                   <td><%= check_box_tag "tutor[time_availabilitys_ids][]", counter, checked = @checked %> </td>
                   <% counter += 1 %>
                 <% end %>
